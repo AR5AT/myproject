@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #800080;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .header .user-menu {
+            display: flex;
+            gap: 15px;
+        }
+        .header .user-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+        .categories {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+        .categories .category {
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            white-space: nowrap;
+            text-align: center;
+        }
+        .categories .category:hover {
+            background-color: #d4d4d4;
+            cursor: pointer;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .product-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .product-card .name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .product-card .price {
+            color: #800080;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">AraNova</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Искать товары...">
+        </div>
+        <div class="user-menu">
+            <a href="enter.html">enter</a>
+            <a href="#">Корзина</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="categories">
+            <div class="category"> 
+                <a href="Одежда.html">Одежда</a></div>
+            <div class="category">
+                <a href="shoes.html">Обувь</a>
+            </div>
+            <div class="category"> 
+                <a href="classica.html">classica
+                </a></div>
+            <div class="category">
+                <a href="beauty.html">beauty</a></div>
+            <div class="category">
+                <a href="rubashka .html">rubashka</a></div>
+            <div class="category">
+                <a href="Электроника.html">Электроника</a></div>
+        </div>
+
+        <section>
+
+        <div class="products">
+            <div class="product-card">
+                <img src="https://avatars.mds.yandex.net/i?id=8a72fa26ad095dc4491fbd25a4e356630704119f-6503967-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+                <div class="name">Название товара</div>
+                <div class="price">1 200 ₽</div>
+            </div>
+            <div class="product-card">
+                <img src="https://avatars.mds.yandex.net/i?id=7714aad891cc10e6e39b18ecd02bdbedbfc5d0e6-8710123-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+                <div class="name">Название товара</div>
+                <div class="price">2 500 ₽</div>
+            </div>
+            <div class="product-card">
+                <img src="https://avatars.mds.yandex.net/i?id=2a00000179ec0054b30ab2933596d9e0c9d3-4903727-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+                <div class="name">Название товара</div>
+                <div class="price">850 ₽</div>
+            </div>
+            <div class="product-card">
+                <img src="https://avatars.mds.yandex.net/i?id=28f8c0c7d0875a23307fd82c12fa98506faa557c-10879773-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+                <div class="name">Название товара</div>
+                <div class="price">1 800 ₽</div>
+            </div>
+<div class="product-card">
+    <img src="https://avatars.mds.yandex.net/i?id=c7e64dca85edfeff77ab11990b83f1dad2f08a39-9231415-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+    <div class="name">Название товара</div>
+    <div class="price">1 800 ₽</div>
+</div>
+<div class="product-card">
+    <img src="https://avatars.mds.yandex.net/i?id=0860285db28061492e58ec5363ca02d8ea70117a-10652854-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+    <div class="name">Название товара</div>
+    <div class="price">1 800 ₽</div>
+</div>
+</section>
+
+
+<section>
+    <div class="products pt-4">
+        <div class="row">
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://sun9-29.userapi.com/impf/c623219/v623219646/3f7f2/9PLq1lIYYNk.jpg?size=496x474&quality=96&sign=df886ac98e7caade3d3c59387fe311e5&type=album" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+
+            </div>
+        </div>
+
+        
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=afdff81bbfba6e8325d683511a8a718c-5869158-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://www.letu.ru/common/img/pim/2023/04/GT_c11461fd-714d-45d5-bb87-dfed780654c3.jpg" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=adf6a71aad055c4ae0bf0d8fb02ea2d0c42d3307-8229244-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=b8452a5572a1d09997734527b88f0187_l-5895790-images-thumbs&ref=rim&n=13&w=1000&h=1000" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://sun9-57.userapi.com/impg/ldO9O6ZPhwXN5xYlNJAntRm4zGI73n1Hs_GPJg/ydZDLG2XV7Q.jpg?size=500x500&quality=96&sign=4941f902038b28707a8dc3ec2b8f95f5&c_uniq_tag=S1TPaXrqpQPDLtaMyll_SiX-Yedw_2N-jX53bc8LcCw&type=album" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<section>
+    <div class="products pt-4">
+        <div class="row">
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=955cd9a04b4cbb5436beb1694a7d17a75fffb034-9044919-images-thumbs&n=13" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+
+            </div>
+        </div>
+
+        
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=01412c9b79384ae569b1372ac32b61d75c51ab9b-8186614-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://static.beloris.ru/content/catalog_image/52188/src/compress_corrector_2h100kopiya.png.jpg" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=4b3aaee86b8c15dad8f1275f9fe5def7eda00b16-10899323-images-thumbs&n=13" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=37e06f3ba0b98dca15e616cc38cea3d89d940e8f-3909374-images-thumbs&n=13" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card">
+                    <img src="https://i.pinimg.com/originals/03/1c/e3/031ce3800bef9d3f890b811753ed8065.jpg" alt="Product">
+                    <div class="name">Название товара</div>
+                    <div class="price">1 800 ₽</div>
+                </div>
+            </div>
+
+    </div>
+
+</section>
+</body>
+</html>
+
+
+
+
+
+    <section>
+        <div class="products pt-4">
+            <div class="row">
+                <div class="col">
+                    <div class="product-card">
+                        <img src="https://avatars.mds.yandex.net/i?id=6bf203c002cf2a7e78e39826ca62d356a80f2bc5-9456457-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Product">
+                        <div class="name">Название товара</div>
+                        <div class="price">1 800 ₽</div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+                <div class="col">
+                    <div class="product-card">
+                        <img src="https://static.cdek.shopping/images/shopping/8a7c53f4e8384bdf8b66d40f5a5c2635.jpg" alt="Product">
+                        <div class="name">Название товара</div>
+                        <div class="price">1 800 ₽</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <img src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dw702332fe/Y0996460/Y0996460_C099700242_E01_GHC.jpg?sw=800" alt="Product">
+                        <div class="name">Название товара</div>
+                        <div class="price">1 800 ₽</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <img src="https://cdn1.ozone.ru/s3/multimedia-y/c600/6652963906.jpg" alt="Product">
+                        <div class="name">Название товара</div>
+                        <div class="price">1 800 ₽</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <img src="https://faberlic-lady.uz/image/cache/catalog/photo/3202-400x400.png" alt="Product">
+                        <div class="name">Название товара</div>
+                        <div class="price">1 800 ₽</div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card">
+                        <img src="https://s.cdnsbn.com/images/products/l/02297380206.jpg" alt="Product">
+                        <div class="name">Название товара</div>
+                        <div class="price">1 800 ₽</div>
+                    </div>
+                </div>
+
+        </div>
+
+    </section>
+</body>
+</html>
+
+
+
